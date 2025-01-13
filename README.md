@@ -1,9 +1,9 @@
 # DCL
 We use the method of cosine similarity to calculate the contrast loss.
 
-Here we use two methods to calculate, one uses ‘einsum’ to calculate the dot product and the paradigm and then calculates the cosine.
+Here we use two methods to calculate, one uses **'einsum'** to calculate the dot product and the paradigm and then calculates the cosine.
 
-Another direct call API uses ’torch.nn.functional.cosine_similarity‘ to calculate cosine.
+Another direct call API uses **'torch.nn.functional.cosine_similarity'** to calculate cosine.
 
 In addition, for positive and negative samples, the first method will have a total of $batchsize*batchsize$ pairs of eigendistances, and we randomly selected $batchsize-1$, and for positive and negative samples, there are $batchsize$ pairs.
 
