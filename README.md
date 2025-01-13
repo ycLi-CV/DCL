@@ -15,8 +15,8 @@ For the second method, we calculate the distance of the $batchsize*batchsize$ pa
 
 另外一种直接调用API使用torch.nn.functional.cosine_similarity计算余弦。
 
-此外，第一种方法对于正正样本和负负样本，总共会有 $batchsize*batchsize$ 对特征距离，我们随机选取了了$batchsize-1$个，而对于正负样本，就有$batchsize$对。
+此外，第一种方法对于正正样本和负负样本，总共会有 $batchsize*batchsize$ 对特征距离，我们随机选取了了 $batchsize-1$ 个，而对于正负样本，就有 $batchsize$ 对。
 
-而对于第二种方法，所有的特征距离我们都计算了$batchsize*batchsize$对的距离
+而对于第二种方法，所有的特征距离我们都计算了 $batchsize*batchsize$ 对的距离
 
 
